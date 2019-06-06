@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.goodnight.everyone"
+	android:versionCode="3"
+	android:versionName="3.0">
+
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="23"/>
+
+	<uses-permission
+		android:name="android.permission.USES_POLICY_FORCE_LOCK"/>
+
+	<uses-permission
+		android:name="android.permission.INTERNET"/>
+
+	<uses-permission
+		android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+	<uses-permission
+		android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+	<uses-permission
+		android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+	<application
+		android:allowBackup="false"
+		android:resizeableActivity="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme">
+
+		<activity
+			android:name=".MainActivity"
+			android:label="@string/app_name">
+
+			<intent-filter>
+
+				<action
+					android:name="android.intent.action.MAIN"/>
+
+				<category
+					android:name="android.intent.category.LAUNCHER"/>
+
+			</intent-filter>
+
+		</activity>
+
+		<receiver
+			android:name=".ScreenOffAdminReceiver"
+			android:label="@string/app_name"
+			android:permission="android.permission.BIND_DEVICE_ADMIN">
+
+			<meta-data
+				android:name="android.app.device_admin"
+				android:resource="@xml/device_admin"/>
+
+			<intent-filter>
+
+				<action
+					android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+
+			</intent-filter>
+
+		</receiver>
+
+		<activity
+			android:name=".old"/>
+
+	</application>
+
+</manifest>
+

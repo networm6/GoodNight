@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FF000000">
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:id="@+id/oldView1"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="晚安 记录"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_marginTop="15dp"
+		android:textColor="#FFFFFFFF"
+		android:textSize="25sp"
+		android:gravity="bottom|center"
+		android:textStyle="bold|normal"/>
+
+	<TextView
+		android:text=""
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_marginTop="15dp"
+		android:padding="6dp"
+		android:id="@+id/oldTextView1"
+		android:gravity="top|center"
+		android:textColor="#FFFFFFFF"/>
+
+</LinearLayout>
+

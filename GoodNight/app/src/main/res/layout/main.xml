@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF000000">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<com.goodnight.everyone.WaveView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/mainWaveView1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="晚安"
+			android:background="#00000000"
+			android:id="@+id/mainButton1"
+			android:textColor="#FFFFFFFF"
+			android:textSize="25sp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:id="@+id/mainView1"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="晚安 世界"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:gravity="center"
+			android:textColor="#FFFFFFFF"
+			android:shadowColor="#FFF4F4F4"
+			android:shadowDy="1.3"
+			android:shadowDx="1.3"
+			android:shadowRadius="1.9"
+			android:id="@+id/mainTextView1"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="9dp"
+			android:id="@+id/mainTextView2"
+			android:textColor="#FFFFFFFF"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:onClick="innight">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#00000000"
+				android:onClick="innight"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:text="往期晚安"
+			android:textColor="#FFFFFFFF"
+			android:shadowColor="#FFFF0000"
+			android:shadowDx="1.3"
+			android:shadowDy="1.5"
+			android:shadowRadius="1.9"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:gravity="bottom|center"
+			android:id="@+id/mainTextView3"
+			android:onClick="inold"/>
+
+	</LinearLayout>
+
+</FrameLayout>
+
